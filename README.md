@@ -1,10 +1,17 @@
 ## Docker Compose com Jenkins e Tomcat
-Esse script faz o pull da imagem da ferramenta de automação de builds e deploy, o Jenkins.
+Através da execução do arquivo docker-compose em ambiente docker pode-se subir um ambiente pré
+configurado de servidores conteinizados com Jenkins e Tomcat.
 
 
-## Idéia
-A idéia é fazer com que o jenkins faça builder de uma aplicação assim que um job
-entender que foi feito commmit na branch master da aplicação que está logado 
-em alguma ferramneta de versão. 
+## Proposta
+A proposta inicial do projeto é criar um ambiente onde possa ser utilizado Jenkins como CI/CD. E o 
+servidor de aplicação é o tomcat. Para que o funcionamento de builder e deploy no tomcat tenha efeito 
+é necessário configurar um job no jenkins.
+O job é configurado para clonar projetos do git, buildar, testar e fazer deploy em qualquer servidor de aplicação,
+como o tomcat por exemplo.
 
-Assim que o job faz builder, o mesmo irá fazer deploy em um container Tomcat.
+## Entendendo o Jenkins
+
+* Site oficial do [Jenkins](https://jenkins.io/).
+
+
