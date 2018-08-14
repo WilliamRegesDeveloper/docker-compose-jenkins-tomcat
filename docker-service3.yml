@@ -9,7 +9,7 @@ services:
                 networks:
                   - redeadvtec
 		volumes:
-                  - "./servicos/jenkins/jenkins_home:/var/jenkins_home"
+                  - jenkins_home:/var/jenkins_home
                 deploy:
                   replicas: 1
                   restart_policy:
