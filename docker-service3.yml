@@ -1,6 +1,6 @@
 version: "3"
 
-service:
+services:
        jenkins:
                 image: jenkins:latest
                 ports:
@@ -8,8 +8,6 @@ service:
                   - "50001:8080"
                 networks:
                   - redeadvtec
-                volumes:
-                  -  /servicos/jenkins/jenkins_home:/var/jenkins_home
                 deploy:
                   replicas: 1
                   restart_policy:
@@ -33,5 +31,3 @@ service:
                     condition: on-failure
 networks:
          redeadvtec:
-volumes:
-servicos/jenkins/jenkins_home:/var/jenkins_home:
