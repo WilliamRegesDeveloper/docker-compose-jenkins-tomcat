@@ -8,6 +8,8 @@ services:
                   - "50001:8080"
                 networks:
                   - redeadvtec
+		volumes:
+                  - "./servicos/jenkins/jenkins_home:/var/jenkins_home"
                 deploy:
                   replicas: 1
                   restart_policy:
