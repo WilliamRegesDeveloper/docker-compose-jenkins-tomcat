@@ -33,3 +33,5 @@ services:
                     condition: on-failure
 networks:
          redeadvtec:
+volumes:
+         jenkins_home:
