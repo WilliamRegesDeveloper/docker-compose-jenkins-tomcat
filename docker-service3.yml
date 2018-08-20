@@ -27,6 +27,7 @@ services:
                   - "./servicos/tomcat8/ROOT:/usr/local/tomcat/webapps/ROOT"
                   - "./servicos/tomcat8/manager:/usr/local/tomcat/webapps/manager"
                   - "./servicos/tomcat8/logs:/usr/local/tomcat/logs"
+                  - tomcat_webapps:/usr/local/tomcat/webapps
                 deploy:
                  replicas: 1
                  restart_policy:
@@ -35,3 +36,4 @@ networks:
          redeadvtec:
 volumes:
          jenkins_home:
+         tomcat_webapps:
