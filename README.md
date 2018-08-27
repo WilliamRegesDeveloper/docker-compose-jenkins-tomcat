@@ -15,13 +15,13 @@ como o tomcat por exemplo.
 # $ docker swarm init --advertise-addr <ip-servidor>
 
 2. Faça clone do projeto no repositório:
-# $ git clone https://github.com/WilliamRegesDeveloper/docker-compose-jenkins-tomcat.git;
+### $ git clone https://github.com/WilliamRegesDeveloper/docker-compose-jenkins-tomcat.git;
 
 3. Entre no projeto docker-compose-jenkins-tomcat clonado e rode o comando para subir os stacks de servidores configurados no arquivo docker-service3.yml:
-# $ docker stack deploy --compose-file docker-service3.yml servico-docker
+### $ docker stack deploy --compose-file docker-service3.yml servico-docker
 
 3. Veja os serviços rodando:
-# $ docker service ls
+### $ docker service ls
 
 4. Entre nos serviços pelas portas externas já configuradas no arquivo docker-service3.yml:
 * porta 8080 - login: sysdba; senha: masterkey;
